@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> My Website </title>
 
     <style>
         .modal {
@@ -301,23 +301,20 @@
         </div>
     </section>
     <!--CALLBACK-->
-    <section class="callback-form" id="callback-form">
+    <section class="callback-form">
         <div class="container">
-            <form action="" class="callback-form-container">
-                <h3 class="callback-form-title mobile-element tablet-element">
-                    /Are you minding <br> [a project?]
-                </h3>
-                <h3 class="callback-form-title desktop-element">
-                    /Are you minding [a project?]
+            <form action="send_form_email.php" method="POST" class="callback-form-container">
+                <!-- Your form fields -->
+                <h3 class="callback-form-title">
+                    Are you minding <br> a project?
                 </h3>
                 <p class="callback-form-descr">
-                    Leave a request to discuss the task and technical requirements </p>
-                <div class="callback-form-inputs" data-aos="zoom-in">
-                    <input type="text" class="callback-form-input" placeholder="Name" id="callback-form-input-name" />
-                    <input type="email" class="callback-form-input" placeholder="Email" id="callback-form-input-email" />
-                    <input type="tel" class="callback-form-input" placeholder="+38 (___) ___ - __ - __" id="callback-form-input-phone" />
-                </div>
-                <input type="submit" class="callback-form-submit button-accent" value="Discuss the project —" />
+                    Leave a request <br> to discuss the task and <br> technical requirements
+                </p>
+                <input type="text" name="Name" class="callback-form-input" placeholder="Your Name" id="callback-form-input-name">
+                <input type="email" name="Email" class="callback-form-input" placeholder="Your Email" id="callback-form-input-email">
+                <input type="tel" name="Mobile_number" class="callback-form-input" placeholder="Your Mobile number" id="callback-form-input-phone">
+                <input type="submit" class="callback-form-submit button-accent" value="Discuss the project">
             </form>
         </div>
     </section>
